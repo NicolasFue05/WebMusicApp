@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+@media (max-width: 500px) {
+    body {
+        width: 100%;
+        padding-top: 20px;
+        right: 0;
+        padding-left: 10px;
+    }
+    
+    /* Header */
+    header {
+        background-color: #ffff;
+        width: 100%;
+        height: 80px;
+        left: 0;
+        margin: 0 auto;
+        box-shadow: -10 -10 ;
+        position: fixed;
+        bottom: 0;
+        font-size: small;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    header ul{
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #button-home a ,
+    #button-browse a ,
+    #button-library  a ,
+    #button-profile a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header ul:last-child {
+        margin-top: 10px;
+    }
+
+    .buttons-container__settings {
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 5em 5em 34em;
+    }
+
+    #button-music{
+        padding: 8px;
+        border: none;
+        background-color: #000;
+        color: #ffff;
+        border-radius: 50px;
+        width: 70px;
+        margin-left: 5px;
+    }
+
+    #button-podcasts {
+        padding: 8px;
+        background-color: #ffff;
+        color: #000;
+        border: none;
+        border-radius: 50px;
+    }
+
+    #button-settings {
+        margin-right: 100px;
+    }
+
+    .playlists-container h1{
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        margin-bottom: 10px;
+    }
+
+    .playlists-container p{
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        margin-bottom: 10px;
+    }
+
+    /* Your Favorite Playlists*/
+    .playlists {
+        width: 100%;
+        height: 320px;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .playlists::-webkit-scrollbar {
+        display: none;
+    }
+
+    .playlist-container{
+        margin-top: 10px;
+        height: none;
+        margin-left: 10px;
+        padding: 3px;
+    }
+
+    .playlist-container h3 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 10px;
+    }
+
+    .playlist-container p{
+        font-size: small;
+    }
+
+    .playlist-image1 {
+        background-image: url(/GraphicalResources/SuicideboysFP.jpg);
+        border-radius: 20px;
+        height: 200px;
+        width: 200px;
+        margin-bottom: 10px;
+        background-size: cover;
+    }
+
+    .playlist-image2 {
+        background-image: url(/GraphicalResources/LilPeepFP.jpg);
+        border-radius: 20px;
+        height: 200px;
+        width: 200px;
+        margin-bottom: 10px;
+        background-size: cover;
+    }
+
+    .playlist-image3 {
+        background-image: url(/GraphicalResources/GymFP.webp);
+        border-radius: 20px;
+        height: 200px;
+        width: 200px;
+        margin-bottom: 10px;
+        background-size: cover;
+    }
+
+    .playlist-image4 {
+        background-image: url(/GraphicalResources/GangsterFP.webp);
+        border-radius: 20px;
+        height: 200px;
+        width: 200px;
+        margin-bottom: 10px;
+        background-size: cover;
+    }
+
+    .playlist-image5 {
+        background-image: url(/GraphicalResources/BonesFP.jpg);
+        border-radius: 20px;
+        height: 200px;
+        width: 200px;
+        margin-bottom: 10px;
+        background-size: cover;
+    }
+
+    .playlist-image6 {
+        background-image: url(/GraphicalResources/AmericanTrapFP.jpg);
+        border-radius: 20px;
+        height: 200px;
+        width: 200px;
+        margin-bottom: 10px;
+        background-size:cover;
+    }
+
+    .playlist-container:first-child {
+        margin-left: 0;
+    }
+
+    .playlist-container h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
